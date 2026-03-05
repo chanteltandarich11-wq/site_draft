@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Contacts Page</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+         <nav>
+            <ul class="sidebar-1">
+                <il onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+</svg></a> </il>
+                <il><a href="about.html">About</a> </il>
+                <il><a href="index.html">Home</a> </il>
+                <il><a href="#">hi</a> </il>
+            </ul>
+            <ul>
+                <il class="hideOnMobile"><a href="index.html">Back to Home</a> </il>
+                <il class="hideOnMobile"><a href="about.html">About</a> </il>
+                <il class="hideOnMobile"><a href="#">hi</a> </il>
+                <il class="hideOnMobile"><a href="#">hi</a> </il>
+                <il class="menu-botton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg></a></il>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar-1')
+                sidebar.style.display = 'flex'
+
+            }
+
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar-1')
+                sidebar.style.display = 'none'
+
+            }
+        </script>
+    </body>
+</html>
