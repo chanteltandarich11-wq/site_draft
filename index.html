@@ -3,24 +3,62 @@
      <head>
         <link rel="stylesheet" href="stylesheet.css">
         <body>
+                
+
             <div class="grid-container-one">
-            <div class="item item-1"></div>
+            <div class="item item-1">
+                
+                <nav>
+            <ul class="sidebar-1">
+                <il onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                        </svg></a> </il>
+                <il><a href="contacts.html">Contacts</a> </il>
+                <il><a href="about.html">About</a> </il>
+                <il><a href="#">hi</a> </il>
+                <il><a href="#">hi</a> </il>
+                    </ul>
+            <ul>
+                <il class="hideOnMobile"><a class="help" href="about.html">About</a> </il>     
+                <il class="hideOnMobile"><a class="alias" href="contacts.html">Contacts</a> </il>
+                <il class="hideOnMobile"><a href="#">hi</a> </il>
+                <il class="hideOnMobile"><a href="#">hi</a> </il>
+                <il class="menu-botton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg></a></il>
+            </ul>
+   
+        </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar-1')
+                sidebar.style.display = 'flex'
+
+            }
+
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar-1')
+                sidebar.style.display = 'none'
+
+            }
+        </script>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="green" stroke="white" stroke-width="0.5px" class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+  <path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207"/>
+  <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+</svg> -->
+            </div>
              <div class="item item-2">
-                <h1 class="header">TEST</h1>
-             <h2 class="sub-head"> this is a test</h2>
+                <h1 class="header">Know Your Rock</h1>
+             <h3 class="sub-head"> A timeline of the history of rock genres</h3>
             </div>
 
               <div class="item item-3">
-                 <!-- <h1 class="meme">About</h1>
-                 <p class="hero-text">Rock music, originating as rock and roll, was developed in the United States during the late 1940s and early 1950s. It emerged from a blend of rhythm and blues (R&B), gospel, country, and boogie-woogie. The genre gained national popularity in the mid-1950s, with Bill Haley's "Rock Around the Clock" (1954) often cited as a key early hit. </p>
-               -->
-                 <div class="Aboutpg">
-                    <div class="main">
-                        <p class="hero-text" >is a paragraph paragraphparagraphpararrrrrgrapaaaaaaaaaah.</p>
-                </div>
+                <!-- <div class="overlay-fade-bottom"> -->
+                        <p class="hero-text" ></p>
 
-                </div>
-                </div>
+                <!-- </div> -->
+                 </div>
               
                 
                            
@@ -44,7 +82,7 @@
                 <li>2000s</li>
                 <li>present</li>
             </ul>
-        <img class="P-two" src="Conmpnents/SVGs/guitar.svg"></img>
+       
     </div>
     <div class="item item2-3">
         <img class="P-three" src="Conmpnents/armandnexk.png">
@@ -66,7 +104,37 @@
     <meta content="width=device-width, inital-scale=1" name="viewport"/>
 
   </head>
-  <body>
+    <body>
+        <div id="grid-container-three">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                <script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 10;
+  document.documentElement.scrollTop = 10;
+}
+</script>
+        </div>
+
+
+
+
+    
+
     <div class="page-wrapper">
         <div class="section-timeline-heading">
             <div class="container">
@@ -125,7 +193,7 @@
                                     </div>
                                 </div>
                                 <div class="timeline-image-wrapper">
-                                <img class="autoRotate" src="Conmpnents/recordd copy.png" loading="lazy" width="480" alt="guitar"/>
+                                <img class="autoRotate" src="Conmpnents/recordd copy.png" loading="lazy" width="480" alt="record"/>
                             </div>
                         </div>
                     </div>
@@ -258,4 +326,45 @@
 
         </body>
     </head>
+<div class="grid-container-four">
+     
+    
+    <div class="item4-1">
+    <p class="footer-text">Author: chantel tandarich<br>
+        &copy; copyright reserved to chantel tandarich productions<br>
+        Email: <a href="chantelt@ocadu.ca">chantelt@ocadu.ca</a>
+    </p>
+    </div>
+        <div class="item4-2">
+            <ul class="footer-text">
+                <li>
+                    <a href="#">Go to top</a>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </div>
+            <div class="item4-3">
+                <ul>
+                    <li>
+                <a href="https://www.instagram.com/ocaduniversity/"> 
+                    <img src="Conmpnents/SVGs/instagram.svg" height="40px" width="40px">
+                     </li>
+                     <li>
+                        <a href="chantelt@ocadu.ca">
+                             <img src="Conmpnents/SVGs/envelope-at.svg" height="40px" width="40px">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://x.com/OCAD">
+                            <img src="Conmpnents/SVGs/twitter-x.svg" height="40px" width="40px">
+                        </a>
+                     </li>
+                </ul>
+                </a>
+
+            </div>
+   
+</div>
+
 </html>
